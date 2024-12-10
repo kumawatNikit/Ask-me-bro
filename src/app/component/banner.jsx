@@ -19,17 +19,17 @@ const Banner = () => {
       <div className="flex flex-col md:flex-row items-center lg:px-5 gap-3">
         
         <div className="flex flex-col  md:text-left md:w-1/3">
-          <h1 className="text-3xl font-bold mb-4">
-            Welcome to Ask me
+          <h1 className="text-3xl  mb-4 typewriter">
+            Welcome to <strong>Ask Me, Bro!</strong>
           </h1>
           <p className="text-lg mb-6">
             Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque.
           </p>
           <div className="pb-3 flex gap-2 ">
-            <button className="bg-[#1c3a40] text-white py-2 px-4 hover:bg-gray-700">
+            <button className="bg-[#1c3a40] text-white py-2 px-4 hover:bg-[#eeecec] hover:text-[#1c3a40]">
               About Us
             </button>
-            <button className="bg-[#1c3a40] text-white py-2 px-4 hover:bg-orange-500">
+            <button className="bg-[#1c3a40] text-white py-2 px-4 hover:bg-[#eeecec] hover:text-[#1c3a40]">
               Join Now
             </button>
           </div>
@@ -49,7 +49,7 @@ const Banner = () => {
             </div>
             <div className='absolute bottom-4 right-4'>
               <button
-                className="bg-[#1c3a40] text-white py-1 px-2 hover:bg-orange-500"
+                className="bg-[#1c3a40] text-white py-1 px-2 hover:bg-[#428690]"
                 onClick={handleAskNow}
               >
                 Ask Now

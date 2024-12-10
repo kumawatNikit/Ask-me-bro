@@ -76,7 +76,7 @@ const RightSideLayout = () => {
             className="w-full border rounded-md p-2 text-sm"
             autoComplete="current-password"
           />
-          <button className="w-full bg-[#1c3a40] text-white py-2 rounded-md">
+          <button className="w-full bg-[#1c3a40] hover:bg-[#428690] text-white py-2 rounded-md">
             Log In
           </button>
           <div className="flex items-center text-sm justify-between">

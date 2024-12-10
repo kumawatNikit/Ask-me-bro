@@ -14,9 +14,9 @@ import { useState } from "react";
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         <div className="items-center">
           <div className="text-2xl font-bold">
-            <span>ASK me</span>
+            <span>Ask Me, Bro!</span>
           </div>
-          <span className="text-sm italic text-[#9c9695]">You Ask. We Answer</span>
+          <span className="text-sm pulse">Your Go-To Advice</span>
         </div>
 
         <nav className="hidden lg:flex space-x-6">
@@ -131,15 +131,15 @@ import { useState } from "react";
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="lg:hidden bg-gray-700 text-white p-4">
-          <Link href="/" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Home</Link>
-          <Link href="/ask" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Ask Question</Link>
-          <Link href="/questions" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Questions</Link>
-          <Link href="/user" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">User</Link>
+        <nav className="lg:hidden bg-[#428690] text-white p-4">
+          <Link href="/" className="block py-2 hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md">Home</Link>
+          <Link href="/ask" className="block py-2 hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md">Ask Question</Link>
+          <Link href="/questions" className="block py-2 hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md">Questions</Link>
+          <Link href="/user" className="block py-2 hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md">User</Link>
           <div className="py-2">
             <button
               onClick={() => setBlogMenuOpen(!blogMenuOpen)}
-              className="w-full text-left hover:bg-[#ff7361] p-3 rounded-md"
+              className="w-full text-left hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md"
             >
               Blog ▼
             </button>
@@ -152,8 +152,8 @@ import { useState } from "react";
               </div>
             )}
           </div>
-          <Link href="/shortcodes" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Shortcodes</Link>
-          <Link href="/contact-us" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Contact Us</Link>
+          <Link href="/shortcodes" className="block py-2 hover:bg-[#eeecec] hover:text-gray-800 p-3 rounded-md">Shortcodes</Link>
+          <Link href="/contact-us" className="block py-2 hover:bg-[#eeecec]  hover:text-gray-800 p-3 rounded-md">Contact Us</Link>
         </nav>
       )}
     </header>

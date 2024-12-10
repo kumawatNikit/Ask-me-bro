@@ -112,9 +112,11 @@ const RecentQuestions = () => {
             onClick={() => paginate(i + 1)} 
             style={{
               margin: '0 5px',
-              backgroundColor: currentPage === i + 1 ? '#007BFF' : '#FFF',
+              backgroundColor: currentPage === i + 1 ? '#1c3a40' : '#FFF',
               color: currentPage === i + 1 ? '#FFF' : '#000',
               border: '1px solid #CCC',
+              padding:'5px',
+              borderRadius:'5px',
             }}
           >
             {i + 1}

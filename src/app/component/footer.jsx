@@ -41,8 +41,8 @@ const Footer = () => {
             <p className="text-[#9c9695]  text-sm mt-2">Feb 22, 2014</p>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
-          <p>Copyright 2014 Ask me | <span className='text-[#9c9695]'>By z2code</span> </p>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-[#9c9695]">
+          <p>Copyright 2014 ASK me Bro!</p>
         </div>
       </footer>
     );
