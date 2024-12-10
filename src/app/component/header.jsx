@@ -19,8 +19,8 @@ import { useState } from "react";
         </div>
 
         <nav className="hidden lg:flex space-x-6">
-          <a href="/" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Home</a>
-          <a href="/ask" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Ask Question</a>
+          <Link href="/" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Home</Link>
+          <Link href="/ask" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Ask Question</Link>
           
           {/* Dropdown for Questions */}
           <div
@@ -33,9 +33,9 @@ import { useState } from "react";
             </button>
             {questionsMenuOpen && (
               <div className="absolute top-12 left-0 bg-[#eeecec] text-gray-800 rounded shadow-lg w-48">
-                <a href="/questions/active" className="block px-4 py-2 hover:bg-gray-200">Active Questions</a>
-                <a href="/questions/answered" className="block px-4 py-2 hover:bg-gray-200">Answered Questions</a>
-                <a href="/questions/archive" className="block px-4 py-2 hover:bg-gray-200">Archive</a>
+                <Link href="/questions/active" className="block px-4 py-2 hover:bg-gray-200">Active Questions</Link>
+                <Link href="/questions/answered" className="block px-4 py-2 hover:bg-gray-200">Answered Questions</Link>
+                <Link href="/questions/archive" className="block px-4 py-2 hover:bg-gray-200">Archive</Link>
               </div>
             )}
           </div>
@@ -51,9 +51,9 @@ import { useState } from "react";
             </button>
             {pagesMenuOpen && (
               <div className="absolute top-12 left-0 bg-[#eeecec] text-gray-800 rounded shadow-lg w-48">
-                <a href="/about-us" className="block px-4 py-2 hover:bg-gray-200">About Us</a>
-                <a href="/faq" className="block px-4 py-2 hover:bg-gray-200">FAQ</a>
-                <a href="/terms" className="block px-4 py-2 hover:bg-gray-200">Terms & Conditions</a>
+                <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200">About Us</Link>
+                <Link href="/faq" className="block px-4 py-2 hover:bg-gray-200">FAQ</Link>
+                <Link href="/terms" className="block px-4 py-2 hover:bg-gray-200">Terms & Conditions</Link>
               </div>
             )}
           </div>
@@ -69,9 +69,9 @@ import { useState } from "react";
             </button>
             {userMenuOpen && (
               <div className="absolute top-12 left-0 bg-[#eeecec] text-gray-800 rounded shadow-lg w-48">
-                <a href="/profile" className="block px-4 py-2 hover:bg-gray-200">Profile</a>
-                <a href="/settings" className="block px-4 py-2 hover:bg-gray-200">Settings</a>
-                <a href="/logout" className="block px-4 py-2 hover:bg-gray-200">Logout</a>
+                <Link href="/profile" className="block px-4 py-2 hover:bg-gray-200">Profile</Link>
+                <Link href="/settings" className="block px-4 py-2 hover:bg-gray-200">Settings</Link>
+                <Link href="/logout" className="block px-4 py-2 hover:bg-gray-200">Logout</Link>
               </div>
             )}
           </div>
@@ -87,38 +87,38 @@ import { useState } from "react";
             </button>
             {blogMenuOpen && (
               <div className="absolute top-12 left-0 bg-[#eeecec] text-gray-800 rounded shadow-lg w-48">
-                <a href="/blog1" className="block px-4 py-2 hover:bg-gray-200">Blog 1</a>
+                <Link href="/blog1" className="block px-4 py-2 hover:bg-gray-200">Blog 1</Link>
                 <div className="group relative">
-                  <a href="/blog2" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link href="/blog2" className="block px-4 py-2 hover:bg-gray-200">
                     Blog 2 ▼
-                  </a>
+                    </Link>
                   <div className="hidden group-hover:block absolute top-0 left-48 bg-[#eeecec] text-gray-800 rounded shadow-lg w-48">
-                    <a
+                    <Link
                       href="/blog2/right-sidebar"
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
                       Right Sidebar
-                    </a>
-                    <a
+                      </Link>
+                    <Link
                       href="/blog2/left-sidebar"
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
                       Left Sidebar
-                    </a>
-                    <a
+                      </Link>
+                    <Link
                       href="/blog2/full-width"
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
                       Full Width
-                    </a>
+                      </Link>
                   </div>
                 </div>
               </div>
             )}
           </div>
 
-          <a href="/shortcodes" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Shortcodes</a>
-          <a href="/contact-us" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Contact Us</a>
+          <Link href="/shortcodes" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Shortcodes</Link>
+          <Link href="/contact-us" className="hover:bg-[#eeecec] hover:text-[#428690] xl:p-3 rounded-md">Contact Us</Link>
         </nav>
 
         <button
@@ -131,10 +131,10 @@ import { useState } from "react";
 
       {isMobileMenuOpen && (
         <nav className="lg:hidden bg-gray-700 text-white p-4">
-          <a href="/" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Home</a>
-          <a href="/ask" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Ask Question</a>
-          <a href="/questions" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Questions</a>
-          <a href="/user" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">User</a>
+          <Link href="/" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Home</Link>
+          <Link href="/ask" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Ask Question</Link>
+          <Link href="/questions" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Questions</Link>
+          <Link href="/user" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">User</Link>
           <div className="py-2">
             <button
               onClick={() => setBlogMenuOpen(!blogMenuOpen)}
@@ -144,15 +144,15 @@ import { useState } from "react";
             </button>
             {blogMenuOpen && (
               <div className="pl-4">
-                <a href="/blog1" className="block py-2 hover:text-gray-300">Blog 1</a>
-                <a href="/blog2/right-sidebar" className="block py-2 hover:text-gray-300">
+                <Link href="/blog1" className="block py-2 hover:text-gray-300">Blog 1</Link>
+                <Link href="/blog2/right-sidebar" className="block py-2 hover:text-gray-300">
                   Blog 2: Right Sidebar
-                </a>
+                  </Link>
               </div>
             )}
           </div>
-          <a href="/shortcodes" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Shortcodes</a>
-          <a href="/contact-us" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Contact Us</a>
+          <Link href="/shortcodes" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Shortcodes</Link>
+          <Link href="/contact-us" className="block py-2 hover:bg-[#ff7361] p-3 rounded-md">Contact Us</Link>
         </nav>
       )}
     </header>
