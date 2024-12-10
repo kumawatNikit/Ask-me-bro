@@ -5,7 +5,9 @@ const QuestionCard = ({ title, description,date }) => {
     <div className="bg-white text-black shadow-md rounded-lg p-4 mb-4 border border-gray-300">
       <div className="flex flex-col sm:flex-row items-start">
         
-        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4 sm:mb-0 sm:mr-4"></div>
+        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4 sm:mb-0 sm:mr-4">
+          <img src='/user.png'></img>
+        </div>
 
         <div className="flex-1">
           {/* Question title */}

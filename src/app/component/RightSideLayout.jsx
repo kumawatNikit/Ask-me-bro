@@ -96,21 +96,21 @@ const RightSideLayout = () => {
         </h3>
         <ul className="space-y-2">
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
             <span className="ml-2">
               Admin <br /> 12 Points
             </span>
           </li>
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
             <span className="ml-2">
               vibgy <br /> 10 Points
             </span>
           </li>
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
             <span className="ml-2">
-              ahmed <br /> 5 Points
+              Ram <br /> 5 Points
             </span>
           </li>
         </ul>
