@@ -5,7 +5,7 @@ import RightSideLayout from '../component/RightSideLayout'
 
 const YourPageComponent = () => {
   return (
-    <div className="container mx-auto px-md-4">
+    <div className="container-fluid">
       <Banner />
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4 lg:p-20">
