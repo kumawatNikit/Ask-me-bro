@@ -20,7 +20,7 @@ const YourPageComponent = () => {
 
   return (
     <>
-      <div className="container mx-auto px-md-4">
+      <div className="container-fluid">
         <Banner />
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:py-4 lg:px-20 hidden md:block">
           <div className="text-right col-span-12">

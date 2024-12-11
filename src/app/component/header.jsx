@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#1c3a40] text-white lg:px-16">
-      <div className="container mx-auto flex justify-between items-center px-4 py-3">
+      <div className="container-fluid mx-auto flex justify-between items-center px-4 py-3">
         <div className="items-center">
           <div className="text-2xl font-bold">
             <span>Ask Me, Bro!</span>
