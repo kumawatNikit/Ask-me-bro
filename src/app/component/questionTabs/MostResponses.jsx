@@ -1,67 +1,92 @@
-import React, { useState } from 'react';
-import QuestionCard from '../QuestionCard';
-
+import React, { useState } from "react";
+import QuestionCard from "../QuestionCard";
 
 const MostResponses = () => {
-  
   const questionsWithMostResponses = [
     {
-      title: 'How do I use React hooks?',
-      date: 'Mar 15, 2023',
-  description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
+      title: "How do I use React hooks?",
+      date: "Mar 15, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
     {
-      title: 'What is the best way to optimize website performance?',
-      date: 'Apr 20, 2023',
-  description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-  {
-    title: 'What is the best way to optimize website performance?',
-    date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-{
-  title: 'What is the best way to optimize website performance?',
-  date: 'Apr 20, 2023',
-description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.' },
-
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
+    {
+      title: "What is the best way to optimize website performance?",
+      date: "Apr 20, 2023",
+      description:
+        "Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis.Curabitur vitae velit in neque dictum blandit.",
+    },
   ];
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 8;
@@ -111,8 +136,8 @@ description:'Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus a
               backgroundColor: currentPage === i + 1 ? "#1c3a40" : "#FFF",
               color: currentPage === i + 1 ? "#FFF" : "#000",
               border: "1px solid #CCC",
-              padding:'5px',
-              borderRadius:'5px',
+              padding: "5px",
+              borderRadius: "5px",
             }}
           >
             {i + 1}
