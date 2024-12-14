@@ -122,7 +122,7 @@ const Header = () => {
                 </div>
 
                 <Link
-                  href="/logout"
+                  href="/auth/login"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Logout

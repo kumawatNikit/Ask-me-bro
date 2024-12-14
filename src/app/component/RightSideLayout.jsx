@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRss } from "@fortawesome/free-solid-svg-icons";
+import Login from "../auth/login/page";
 
 const RightSideLayout = () => {
   return (
@@ -59,35 +60,7 @@ const RightSideLayout = () => {
       </div>
 
       {/* Login Section */}
-      <div className="bg-white shadow-md rounded-lg p-4">
-        <h3 className="text-lg font-bold mb-2 border-b pb-2 text-[#428690]">
-          Login
-        </h3>
-        <form className="space-y-3">
-          <input
-            type="text"
-            placeholder="Username"
-            className="w-full border rounded-md p-2 text-sm"
-            autoComplete="username"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            className="w-full border rounded-md p-2 text-sm"
-            autoComplete="current-password"
-          />
-          <button className="w-full bg-[#1c3a40] hover:bg-[#428690] text-white py-2 rounded-md">
-            Log In
-          </button>
-          <div className="flex items-center text-sm justify-between">
-            <div>
-              <input type="checkbox" className="mr-2" />
-              <label>Remember Me</label>
-            </div>
-            <button className="text-red-500 text-sm underline">Register</button>
-          </div>
-        </form>
-      </div>
+      <Login />
 
       {/* Highest Points Section */}
       <div className="bg-white shadow-md rounded-lg p-4">
@@ -96,19 +69,28 @@ const RightSideLayout = () => {
         </h3>
         <ul className="space-y-2">
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full">
+              {" "}
+              <img src="/user.png"></img>
+            </div>
             <span className="ml-2">
               Admin <br /> 12 Points
             </span>
           </li>
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full">
+              {" "}
+              <img src="/user.png"></img>
+            </div>
             <span className="ml-2">
               vibgy <br /> 10 Points
             </span>
           </li>
           <li className="flex items-center">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"> <img src='/user.png'></img></div>
+            <div className="w-8 h-8 bg-gray-300 rounded-full">
+              {" "}
+              <img src="/user.png"></img>
+            </div>
             <span className="ml-2">
               Ram <br /> 5 Points
             </span>
@@ -164,6 +146,6 @@ const RightSideLayout = () => {
   );
 };
 
-RightSideLayout.displayName = 'RightSideLayout';
+RightSideLayout.displayName = "RightSideLayout";
 
 export default RightSideLayout;
