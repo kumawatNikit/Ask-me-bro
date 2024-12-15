@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Banner from "../component/banner";
-import DescriptionPart from "../component/DescriptionPart";
-import RightSideLayout from "../component/RightSideLayout";
 import { ListSettings } from "@styled-icons/remix-line";
+import TopBar from "./topbar";
+import Header from "./header";
+import Footer from "./footer";
+import RightSideLayout from "./RightSideLayout";
+import Banner from "./home/banner";
 
-const YourPageComponent = () => {
+
+const Wrepar = ({children}) => {
   const [layout, setLayout] = useState("default");
 
   const handleIconClick = () => {
@@ -20,6 +23,8 @@ const YourPageComponent = () => {
 
   return (
     <>
+     <TopBar />
+     <Header />
       <div className="container-fluid">
         <Banner />
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:py-4 lg:px-20 hidden md:block">
@@ -37,7 +42,7 @@ const YourPageComponent = () => {
         {layout === "default" && (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4 lg:p-20">
             <div className="col-span-1 md:col-span-3">
-              <DescriptionPart />
+            {children}
             </div>
             <div className="col-span-1">
               <RightSideLayout />
@@ -51,7 +56,7 @@ const YourPageComponent = () => {
               <RightSideLayout />
             </div>
             <div className="col-span-1 md:col-span-3">
-              <DescriptionPart />
+            {children}
             </div>
           </div>
         )}
@@ -59,15 +64,15 @@ const YourPageComponent = () => {
         {layout === "fullwidth" && (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 p-4 lg:p-20">
             <div className="col-span-12">
-              <DescriptionPart />
+            {children}
             </div>
           </div>
         )}
       </div>
+      <Footer />
     </>
   );
 };
 
-YourPageComponent.displayName = "YourPageComponent";
 
-export default YourPageComponent;
+export default Wrepar;

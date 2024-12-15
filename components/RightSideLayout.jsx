@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRss } from "@fortawesome/free-solid-svg-icons";
-import Login from "../auth/login/page";
+import Login from "@/app/auth/login/page";
 
 const RightSideLayout = () => {
   return (
@@ -60,7 +60,7 @@ const RightSideLayout = () => {
       </div>
 
       {/* Login Section */}
-      <Login />
+      <Login   />
 
       {/* Highest Points Section */}
       <div className="bg-white shadow-md rounded-lg p-4">
